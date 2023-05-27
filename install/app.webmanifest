@@ -1,0 +1,16 @@
+{
+  "name": "eaglercraft 1.5.2 offline PWA",
+  "short_name": "eaglercraft 1.5.2",
+  "description": "Play eaglercraft 1.5.2 offline!",
+  "icons": [
+    {
+      "src": "./152icon.png",
+      "sizes": "720×720",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://neon443.github.io/eaglercraft152/offline/",
+  "display": "fullscreen",
+  "theme_color": "#000",
+  "background_color": "#000"
+}
