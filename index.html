@@ -24,11 +24,11 @@ const relayId = Math.floor(Math.random() * 3);
 window.eaglercraftOpts = {
 container: "game_frame", assetsURI: "assets.epk", serverWorkerURI: "worker_bootstrap.js", worldsFolder: "MAIN",
 servers: [
-	{ serverName: "Asspixel", serverAddress: "wss://web.asspixel.net/CAP/", hideAddress: false },
-	{ serverName: "to request a server to add, email me", serverAddress: "vape.master.69@hotmail.com", hideAddress: false }
+    { serverName: "Asspixel", serverAddress: "wss://web.asspixel.net/CAP/", hideAddress: false },
+    { serverName: "to request a server to add, email me", serverAddress: "vape.master.69@hotmail.com", hideAddress: false }
 ],
 relays: [
-	{ addr: "wss://eaglerrelay.glitch.me", name: "Hellscaped LAN relay", primary: relayId == 0 }
+    { addr: "wss://eaglerrelay.glitch.me", name: "Hellscaped LAN relay", primary: relayId == 0 }
 ],
 mainMenu: { splashes: [
 "neon443.github.io"
@@ -38,23 +38,23 @@ var q = window.location.search;
 if(typeof q === 'string' && q.startsWith("?")) {
 	q = new URLSearchParams(q);
 	var s = q.get("server");
-	if(s) window.minecraftOpts.push(s);
+	if(s) window.eaglercraftOpts.joinServer = s;
 }
 })();
 main();
 });}
 </script>
 </head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6R79TC88DQ"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6R79TC88DQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-	  gtag('config', 'G-6R79TC88DQ');
-	</script>
-	<!-- Google tag (gtag.js) -->
+  gtag('config', 'G-6R79TC88DQ');
+</script>
+<!-- Google tag (gtag.js) -->
 <body style="margin:0px;width:100vw;height:100vh;" id="game_frame">
 </body>
 </html>
